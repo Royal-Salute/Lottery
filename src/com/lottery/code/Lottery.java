@@ -29,7 +29,7 @@ public class Lottery {
 		
 		int[] sixNum = new int[list.size()];
 		for (int i=0; i<3; i++){
-			sixNum[i] = random.nextInt(list.size());		// 將隨機數(1-49)放入 sixNum[i]
+			sixNum[i] = random.nextInt(list.size());		// 將隨機數放入 sixNum[i]
 			for (int j=0; j<i;){			// 與前數列比較，若有相同則再取亂數
 				if (sixNum[j]==sixNum[i]){	
 					sixNum[i] = random.nextInt(list.size());
